@@ -178,6 +178,10 @@ Shortcut shortcuts[] = {
         { ControlMask|ShiftMask,XK_Y,           selpaste,       {.i =  0} },
 	{ ControlMask|ShiftMask,XK_C,           clipcopy,       {.i =  0} },
 	{ ControlMask|ShiftMask,XK_V,           clippaste,      {.i =  0} },
+	{ MODKEY|ControlMask,   XK_k,           kscrollup,      {.i =  1} },
+	{ MODKEY|ControlMask,   XK_j,           kscrolldown,    {.i =  1} },
+	{ MODKEY|ControlMask,	XK_u,           kscrollup,      {.i = -1} },
+	{ MODKEY|ControlMask,	XK_d,           kscrolldown,    {.i = -1} },
 };
 
 /*

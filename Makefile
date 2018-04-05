@@ -31,6 +31,7 @@ st: ${OBJ}
 	@${CC} -o $@ ${OBJ} ${LDFLAGS}
 
 clean:
+	rm -f config.h
 	@echo cleaning
 	@rm -f st ${OBJ} st-${VERSION}.tar.gz
 

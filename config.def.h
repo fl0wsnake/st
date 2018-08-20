@@ -83,7 +83,7 @@ char termname[] = "st-256color";
 static unsigned int tabspaces = 8;
 
 /* bg opacity */
-unsigned int alpha = 0xdd;
+unsigned int alpha = 0xcc;
 
 /* Terminal colors (16 first used in escape sequence) */
 const char *colorname[] = {
@@ -178,8 +178,8 @@ Shortcut shortcuts[] = {
         { ControlMask|ShiftMask,XK_Num_Lock,    numlock,        {.i =  0} },
         { XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
-	{ ControlMask|ShiftMask,XK_Prior,       zoom,           {.f = +1} },
-	{ ControlMask|ShiftMask,XK_Next,        zoom,           {.f = -1} },
+	{ MODKEY|ControlMask,   XK_l,           zoom,           {.f = +1} },
+	{ MODKEY|ControlMask,   XK_h,           zoom,           {.f = -1} },
 	{ ControlMask|ShiftMask,XK_Home,        zoomreset,      {.f =  0} },
         { ControlMask|ShiftMask,XK_Y,           selpaste,       {.i =  0} },
 	{ ControlMask|ShiftMask,XK_C,           clipcopy,       {.i =  0} },

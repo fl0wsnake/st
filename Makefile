@@ -1,5 +1,7 @@
 # st - simple terminal
 # See LICENSE file for copyright and license details.
+do-the-job:
+	make options st && sudo make clean && sudo make install 
 
 include config.mk
 
